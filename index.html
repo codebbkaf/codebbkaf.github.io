@@ -1,15 +1,182 @@
-<!DOCTYPE html>
-<html>
-    <body style="background-color:black;">
-        <h1 style="color:white"; align="center"><font size="7">刑動台中v2.6.3 2019/12/13 17:55</h1>
-<!--        <p style="color:gray"; align="center"><font size="6">內部測試版本下載1017_更新提醒_舊版憑證_點地圖外開GoogleMap_請後台先調整版為2.6.3座更新下載測試</p>-->
-<p style="color:white"; align="center"><font size="6">雙平台更新內容: 1.新版CellID 2.訊息頁面直接上一筆，下一筆 3.舊版憑證</p>
-                <p style="color:white"; align="center"><font size="6">iOS: 修正點擊上一筆/下一筆時，圖片尚未更新的問題</p>
-                    <p style="color:white"; align="center"><font size="6">Android: 1.修正CellID查詢時顯示資料點錯誤的問題, 2.修正未輸入電信商的查詢資料顯示, 3.處理重複推送訊息至cliect端的狀況</p>
-                        
-            <a style="color:white"; href="itms-services://?action=download-manifest&url=https://dl.dropbox.com/s/2009bdpsuxofcb2/manifest.plist"><font size="10">TCPD_iOS</a>
-            <p style="color:black"; align="center"><font size="6">           -             -</p>
-                        <p style="color:black"; align="center"><font size="6">           -             -</p>
-            <a style="color:white"; href="https://drive.google.com/open?id=15DfP-8zK0MhiYIKuRuDdmjCFFkwlNuGv"><font size="10">TCPD_Android</a>
-    </body>
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <title>臺中市政府警察局刑事警察大隊 刑動台中</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-size: 16px;
+            padding-bottom: 160px;
+        }
+        
+        ul {
+            list-style-type: none;
+            line-height: 3em;
+        }
+        
+        header {
+            background-image: url('img/bg.png');
+            background-size: cover;
+            min-height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 30px solid #ffcc33;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        section .title-text {
+            margin-top: 1.5em;
+            color: #444;
+        }
+        
+        section button {
+            width: 260px;
+            height: 80px;
+            border-radius: 40px;
+            border: 0px;
+            filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.4));
+            color: #fff;
+            font-size: 1.2em;
+            background-color: #1d9f7e;
+            margin-top: 1.5em;
+            display: flex;
+            align-items: center;
+            transition: .2s;
+        }
+        
+        section button:hover {
+            background-color: #208e72;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+            transition: .2s;
+        }
+        
+        button .btn-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 1em 1em 1em 18%;
+        }
+        
+        button .btn-icon img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .version {
+            padding-top: 1.2em;
+            font-size: 0.8em;
+            color: #666;
+        }
+        
+        .version-content {
+            margin-top: 3em;
+            max-width: 600px;
+            padding: 1.5em 3em;
+            color: #666;
+            font-size: 0.9em;
+            line-height: 2em;
+            border: 1px #999 dashed;
+        }
+        
+        .version-content h3 {
+            color: #444;
+            margin-bottom: .5em;
+        }
+        
+        .version-content img {
+            vertical-align: bottom;
+            padding-right: .5em;
+        }
+        
+        .apple {
+            padding-top: 1em;
+        }
+        
+        .android {
+            padding-top: 1em;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 120px;
+            background-color: #ffcc33;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        small {
+            color: #444;
+            padding-top: 1em;
+            line-height: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="header-img" src="img/logo.png">
+    </header>
+    <section>
+        <h2 class="title-text">刑動台中v2.6.3</h2>
+        <div>
+<!--            <button onclick="location.href='http://www.example.com'" type="button">-->
+<!--                www.example.com</button>-->
+            <button onclick="location.href='itms-services://?action=download-manifest&url=https://dl.dropbox.com/s/2009bdpsuxofcb2/manifest.plist'">
+                <span class="btn-icon"><img src="img/apple-w.svg"></span>TCDP iOS-23
+            </button>
+            <div class="version text-center">刑動台中v2.6.3 2019/12/13 17:55</div>
+        </div>
+        <div>
+            <button onclick="location.href='https://drive.google.com/open?id=15DfP-8zK0MhiYIKuRuDdmjCFFkwlNuGv'">
+                <span class="btn-icon"><img src="img/android-w.svg"></span>TCDP Android
+            </button>
+            <div class="version text-center">刑動台中v2.6.3 2019/12/13 17:55</div>
+            <span>
+    </div>
+    <div class="version-content">
+        <h3><img src="img/bullhorn.svg" width="20px">版本修正內容：</h3>
+        <div>雙平台更新內容：<br>
+            1.新版CellID<br>
+            2.訊息頁面直接上一筆，下一筆<br>
+            3.舊版憑證
+        </div>
+        <div class="apple"><img src="img/apple.svg" width="20px">iOS：<br>
+            修正點擊上一筆/下一筆時，圖片尚未更新的問題
+            </div>
+        <div class="android"><img src="img/android.svg" width="20px">Android：<br>
+            1.修正CellID查詢時顯示資料點錯誤的問題<br>
+            2.修正未輸入電信商的查詢資料顯示<br>
+            3.處理重複推送訊息至cliect端的狀況
+            </div>
+    </div>
+    </section>
+    <footer>
+    <small>臺中市政府警察局刑事警察大隊全球資訊網 版權所有 © 2019<br>
+        瀏覽器建議使用 IE 10.0以上版本 最佳瀏覽解析度：1024x768<br>
+    更新日期：民國108年12月27日　│　累計瀏覽人數: 6996051</small>
+    </footer>
+</body>
+
 </html>
