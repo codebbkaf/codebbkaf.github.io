@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://ai.ousi.tw/tc/ios/TCPD_iOS_release.ipa</string>
+					<string>https://ai.ousi.tw/tc/ios/TCPD_iOS_release.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
